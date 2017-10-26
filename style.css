@@ -1,0 +1,21 @@
+.title {
+	color: white;
+	background-color: #33bebe;
+	margin-bottom: 50px;
+	left: 200px;
+}
+
+.description {
+	color: #E4F0F5;
+	
+}
+
+.description {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.image {
+	margin-right: 30px;
+
+}
