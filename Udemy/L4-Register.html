@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+
+	<h1>Register</h1>
+
+	<form>
+		<label for="firstname">Frist Name:</label>
+		<input id="firstname" type="text" name="firstname" placeholder="John" required>
+
+		<label for="lastname">Last Name:</label>
+		<input id="lastname" type="text" name="lastname" placeholder="Smith" required>
+	<!-- 也可以用 <div></div> 做換行 -->
+
+	<p>	<!-- 沒有加value的話 Gender=on -->
+		<label for="Male">Male</label>
+		<input id="Male" type="radio" name="Gender" value="Male">
+
+		<label for="Female">Female</label>
+		<input id="Female" type="radio" name="Gender" value="Female">
+
+		<label for="Other">Other</label>
+		<input id="Other" type="radio" name="Gender" value="Other" required>
+	</p>
+	<p>
+		<label for="Email">Email:</label>
+		<input id="Email" type="email" name="email" placeholder="your email" required>
+
+		<label for="Password">Password:</label>
+		<input id="Password" type="password" name="password" placeholder="your password" pattern=".{5,10}" required title="nonono"  >
+		<!-- minlength="5" maxlength="10" -->
+	</p>
+	<p>
+		<label>
+			Birthday:
+			<select name="Year">
+				<option>Year</option>
+				<option>1991</option>
+				<option>1992</option>
+				<option>1992</option>
+			</select>
+			<select name="Month">
+				<option>Month</option>
+				<option>09</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+			</select>
+			<select name="Day">
+				<option>Day</option>
+				<option>20</option>
+				<option>21</option>
+				<option>22</option>
+				<option>23</option>
+			</select>
+		</label>
+	</p>
+	<p>
+	<label>
+	I agree to terms and conditions
+		<input type="checkbox" name="agreed" required>
+	</label>	
+	</p>
+
+	<button>Submit</button>
+	<!-- <input type="Submit" name="Submit"> -->
+
+<!-- <label>
+	I agree to terms and conditions
+		<input type="checkbox" name="agreed" required>
+	</label>	
+
+	<label for="agree">I agree to terms and conditions</label>
+	<input id="agree" type="checkbox" name=agreed required>	
+ -->
+	</form>
+
+</body>
+</html>
