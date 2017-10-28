@@ -1,0 +1,44 @@
+h1 {
+    color: #0f778f;
+	/*	border-color: purple;
+	border-width: 5px;*/ 
+
+	border: #ffe7e8 2px solid;
+}
+
+li {
+ 	color: green;
+}
+
+h4 {
+	background: #ffe7e8;
+}
+
+body {
+	
+/*	background:url(http://static.simpledesktops.com/uploads/desktops/2010/03/31/Lamp_SimpleDesktops_mvf.png);
+	background-repeat: no-repeat; /*norepeat
+	background-size: cover;  /*entire body*/
+}
+
+
+
+/*color- we usually use hexadecimal 16進制
+
+binary 2進制
+0 1
+
+
+decimal 10進制
+0 1 2 3 4 5 6 7 8 9
+
+
+hexadecimal 16進制
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+#r r g g b b 用光的原理
+
+
+rgb(255,255,255,) (r.g.b) 
+
+rgba(a=透明度 0~1)*/

@@ -1,0 +1,20 @@
+body {
+	background: orange;
+}
+
+li {
+	border: white solid 2px;
+
+}
+
+/*use in two or more element*/
+.completed {
+	text-decoration: line-through;
+}
+
+/*use in one element*/
+#specialcolor {
+	background:yellow;
+}
+
+
