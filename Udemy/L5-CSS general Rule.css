@@ -20,3 +20,55 @@ img {
 	border-color: red;
 	border-width: 3px;
 }
+
+
+css selector must know
+
+
+/*Element*/
+li {
+
+}
+/*class*/
+.hello {
+
+}
+/*id*/   
+#name {
+
+}
+
+/*Star*/ everthing on the page
+
+* {
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selector*/  針對所有 li 底下的 a （連結）
+
+li a {
+	color: red;
+}
+
+/*Adjacent Selector*/  h4 後 所有的 ul
+
+h4 + ul {
+	border: 4px solid red;
+}
+
+
+/*Attribute Selector*/  後接想要找的type 
+
+input [type="text"] {
+	background: blue;
+}
+
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+/*nth of type*/ 找"第"n個屬性 （odd even 也可）
+
+li:nth-of-type(odd){
+	background: purple;
+}
