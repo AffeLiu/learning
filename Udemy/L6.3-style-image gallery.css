@@ -1,0 +1,21 @@
+img {
+	width:30%;
+	/*佔整個版面的30% 可以形成一個3分90%的畫面*/
+	float: left;
+	/*用float讓他們緊貼*/
+	margin: 1.66%;
+	/*將剩下的10%分到margin上*/
+}
+
+p {
+	font-family: raleway;
+	font-size: 40px;
+	font-weight: 800;
+	margin-left: 1.66%;
+	border-bottom: 2px solid #f1f1f1;
+	width: 30%;
+	padding-bottom: 10px;
+
+}
+
+

@@ -1,0 +1,71 @@
+/*font-family*/
+
+
+h1 {
+	font-family: pacifico;
+}
+
+p {
+	font-family: Pacifico;
+}
+
+
+
+
+/*font-size*/
+
+/*有些人會在一開始就在最高層設定好預設字體大小，方便計算em實際值*/
+
+body {
+	font-size: 20px;
+}
+
+
+h1 {
+	font-size: 5.0em;
+}
+
+
+
+span {
+	font-size: 2.0em;
+}
+
+/*em為一動態單位，主要根據父層物件尺寸來設定，2.0em相當於預設為原始的兩倍
+。若原始元素沒有定義font-size的話，那1em就等於16px。*/
+
+/*rem 和 em 使用方法接近，不同的是他僅相對於 root 層級的文字大小(網頁中的 html)。*/
+
+/*font-weight 字體樣式*/
+
+p {
+	font-weight: bold;
+	/*100-800以百為單位可以調粗細*/
+}
+
+/*line-height 行距*/
+
+p {
+	line-height: 2;
+}
+
+/*line-align 對齊（至中 向左 向右）*/
+
+h1 {
+	text-align: right;
+}
+
+p {
+	text-align: center;
+}
+
+/*text-decoration*/
+
+p {
+	text-decoration: underline;
+}
+
+h1 {
+	text-decoration: line-through;
+}
+
