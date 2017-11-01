@@ -31,6 +31,16 @@ String （字串）：可相加 雙引號單引號皆可，但不可混用
 				"hello"[0] ＝０
 
 
+undefined and null
+
+undefined 意思是變數沒有被宣告，或者是已經宣告了，但是沒有賦值。
+null 意思是「沒有值」的值。
+Javascript 將未賦值的變數的預設值設為 undefined。
+Javascript 從來不會將值設定為 null。這是讓開發者用來宣告 var 是沒有值的。
+undefined 不是一個有效的 JSON，而 null 是有效的。
+undefined 的類型（typeof） 是 undefined。
+
+
 
 var：
 
@@ -53,6 +63,12 @@ num + 3 + 10    //50
 //We can also update existing variables
 var name = "Robert";
 name = "Bob";
+
+console.log( 只出現在console層 查找一個函數的值)
+
+prompt("") 視窗秀出一個可輸入值的函數
+
+alert("") 視窗彈出一段訊息
 
 
 JS可以隨意地將var的value從數字轉成字串沒問題
