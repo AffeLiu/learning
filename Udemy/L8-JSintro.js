@@ -15,9 +15,9 @@ JavaScript 的型態
 
 基本用法：
 
-Number （數字）：可＋－＊／  ％為餘數  10%3 = 1
+*Number （數字）：可＋－＊／  ％為餘數  10%3 = 1
 
-String （字串）：可相加 雙引號單引號皆可，但不可混用
+*String （字串）：可相加 雙引號單引號皆可，但不可混用
 				backslash \ 為escape characters 可將特殊符號如雙引單引號排除於系統命令之外 當成字串顯示
 				下一個字會在但\本身會不見。
 				// ex: "hi \"goodbye\" " －－－> "hi "goodbye" "
@@ -30,8 +30,32 @@ String （字串）：可相加 雙引號單引號皆可，但不可混用
 
 				"hello"[0] ＝０
 
+*Boolean 
+true false
 
-undefined and null
+> >= < <= 大於 大於or等於 小於 小於or等於
+==  equal to
+!=  not equal to
+=== equal value and type
+!== not equal value or equal type
+
+&& and || or ! not
+
+value也繼承了其特性 分為 truthy and falsy
+
+falsy value: false 0 "" null undefined NaN
+
+true=="1" (true)  0==false (true)
+
+null==undefined (true)  NaN == NaN (false)
+
+var x=99 
+x=="99" (true) x==="99" (false)
+
+var y=null
+y==undefined (true) y===undefined (false)
+
+*undefined and null
 
 undefined 意思是變數沒有被宣告，或者是已經宣告了，但是沒有賦值。
 null 意思是「沒有值」的值。
