@@ -123,6 +123,22 @@ count++;
 }
 
 
+*for loops 
+
+for(var count=1; count<6; count++){
+	console.log(count);
+}
+
+改寫成 while
+
+var count=1;
+
+while (count<6){
+	console.log(count);
+	count++;
+}
+
+
 使用 indexof 函數查找某質中是某包含某些值
 
 indexOf() 方法對大小寫敏感！
