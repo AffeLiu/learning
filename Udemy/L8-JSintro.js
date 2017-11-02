@@ -107,23 +107,11 @@ JS 使用 camelCase 以識別命名時多單字組成的易讀性
 *if (true) {}
 if or else if 後面才可接條件 else 後面不行。
 
-*while(some condition) {
+*while loops (some condition) {
 
 }
 很像if 但他會一直repeat if 這只會run一次
 
-
-
-
-
-
-
-
-
-while (count <21)
-	{ console.log("count is" +count); 
-	count++;
-}
 
 var str="hello";
 
@@ -135,9 +123,14 @@ count++;
 }
 
 
+使用 indexof 函數查找某質中是某包含某些值
 
-
-
+indexOf() 方法對大小寫敏感！
+如果要檢索的字符串值没有出現，則該方法返回 -1。
+var str="Hello world!"
+str.indexOf("Hello") 0 從第零個位置開始這個字
+str.indexOf("World") -1 沒有
+str.indexOf("world") 6   第六個
 
 
 
