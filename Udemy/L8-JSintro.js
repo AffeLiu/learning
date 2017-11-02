@@ -15,6 +15,8 @@ JavaScript 的型態
 
 基本用法：
 
+typeof sth 可以查找他的型態
+
 *Number （數字）：可＋－＊／  ％為餘數  10%3 = 1
 
 *String （字串）：可相加 雙引號單引號皆可，但不可混用
@@ -90,7 +92,7 @@ name = "Bob";
 
 console.log( 只出現在console層 查找一個函數的值)
 
-prompt("") 視窗秀出一個可輸入值的函數
+prompt("") 視窗秀出一個可輸入值的函數 回傳的值是“字串”
 
 alert("") 視窗彈出一段訊息
 
@@ -99,4 +101,43 @@ JS可以隨意地將var的value從數字轉成字串沒問題
 
 JS 使用 camelCase 以識別命名時多單字組成的易讀性
 另外還有幾種case：snack_case kebab-case
+
+
+
+*if (true) {}
+if or else if 後面才可接條件 else 後面不行。
+
+*while(some condition) {
+
+}
+很像if 但他會一直repeat if 這只會run一次
+
+
+
+
+
+
+
+
+
+while (count <21)
+	{ console.log("count is" +count); 
+	count++;
+}
+
+var str="hello";
+
+var count= 0;
+
+while (count < str.length) {
+console.log(str[count]);
+count++;
+}
+
+
+
+
+
+
+
 
