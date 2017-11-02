@@ -142,11 +142,42 @@ while (count<6){
 使用 indexof 函數查找某質中是某包含某些值
 
 indexOf() 方法對大小寫敏感！
-如果要檢索的字符串值没有出現，則該方法返回 -1。
+如果要檢索的字符串值没有出現，則該方法得到 -1。
 var str="Hello world!"
 str.indexOf("Hello") 0 從第零個位置開始這個字
-str.indexOf("World") -1 沒有
+str.indexOf("World")-1 沒有
 str.indexOf("world") 6   第六個
 
+
+
+*function 可以儲存程式碼的函數
+
+function (sth) {
+	console.log(hi)
+}
+
+要用的時候：function();
+
+
+想要看這個函數後面所存的code: function
+
+分為兩種方式 "function declaration" and "function expression"
+
+
+*return
+often we want a function to send back an output value
+
+return可以下很多個 但一個function只會回傳一個return結果
+（最優先的）
+
+ex:
+
+funtion test(x) {
+	return x*2       \\只會執行這一個
+	console.log(x);
+	return x*2;
+}
+
+test(40);
 
 

@@ -65,12 +65,8 @@ for (i=5; i<=50; i++){
 }
 
 
-*function 可以儲存程式碼的函數
 
-function sth(){
-	console.log(hi)
-}
 
-要用的時候：function();
 
-想要看這個函數後面所存的code: function
+
+
