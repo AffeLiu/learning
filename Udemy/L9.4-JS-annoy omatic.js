@@ -23,3 +23,5 @@ while (answer.indexOf("yes") === -1) {
 // 上面的loop沒有跑完就不會進到alert
 
 alert("YAY, We made it!")
+
+
