@@ -193,3 +193,32 @@ test(40);
 
 return可以是一個值一個結果 return x*2; 
 也可以直接用來判定 true false return= n%2===0 ; 等式成立就是true
+
+
+
+*scope:範圍
+Javascript會在查找變數時，會循著範圍鏈（Scope chain）一層一層往外找
+使用var所宣告的變數，作用範圍是在當時所在環境，
+不使用var直接指定值而建立的變數，則是全域物件上的一個特性，也就是俗稱的全域範圍。
+
+每個function 都有自己的scope不互相共享 
+
+在function 裡定義的var 放到全域上會變成undefined
+
+
+*setInterval 可按指定的週期調用指定函數
+ex:
+
+function sing(){
+	console.log("haha")
+}
+
+setInterval(sing,2000) (調用的函數,n百萬分之一秒)
+sing後面不用括號是因為我們不是直接叫出這函數，而是給setIerval去使用這函數。
+
+當然也可以直接把調用的函數寫在setIerval裡面
+
+setInterval(function sing(){
+	console.log("haha")
+},2000)
+
