@@ -206,6 +206,7 @@ Javascript會在查找變數時，會循著範圍鏈（Scope chain）一層一�
 在function 裡定義的var 放到全域上會變成undefined
 
 
+從一個function呼叫另外一個function的方法：
 *setInterval 可按指定的週期調用指定函數
 ex:
 
@@ -221,4 +222,32 @@ sing後面不用括號是因為我們不是直接叫出這函數，而是給setI
 setInterval(function sing(){
 	console.log("haha")
 },2000)
+
+
+*Array 陣列
+JavaScript 中，全域物件 Array 是陣列的建構子，陣列是高階、似列表的物件。
+
+var friend1 = "Charlie";
+var friend2 = "Liz";
+var friend3 = "David";
+var friend4 = "Mattias";
+
+------------Array---------------
+
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+
+取用：friends[0]"Charlie"
+增加：friends[4]"Mary" 即可將mary增加到friends裡去
+
+//We can initialize an empty array two ways:
+var friends = []; //no friends :(
+var friends = new Array() //uncommon
+
+格式可以不同
+var random_collection = [49, true, "Hermione", null];
+
+一樣可以計算長度
+var nums = [45,37,89,24];
+nums.length = 4
+
 
