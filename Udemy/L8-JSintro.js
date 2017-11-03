@@ -161,14 +161,24 @@ function (sth) {
 
 想要看這個函數後面所存的code: function
 
+
 分為兩種方式 "function declaration" and "function expression"
 
+//function declaration
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+//function expression
+var capitalize = function(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 *return
 often we want a function to send back an output value
 
 return可以下很多個 但一個function只會回傳一個return結果
-（最優先的）
+（最優先的） *使用if 的話會全部跑完。
 
 ex:
 
@@ -181,3 +191,5 @@ funtion test(x) {
 test(40);
 
 
+return可以是一個值一個結果 return x*2; 
+也可以直接用來判定 true false return= n%2===0 ; 等式成立就是true
