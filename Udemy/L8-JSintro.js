@@ -281,3 +281,35 @@ slice()方法用來將A 陣列的元素 複製到 B 陣列
 slice(begin, end) end 不會被算進去 
 只填begin會直接複製到最後一個元素
 ()都不填，就會複製全部
+
+
+*forEach
+
+for/while loop + function + array
+
+forEach() 方法會給陣列內的每個元素，都執行給定的函式一次。
+
+var colors = ["red", "orange","yellow", "green"];
+
+colors.forEach(function(color){
+  console.log(color);});
+
+//with a for loop
+var colors = ["red", "orange", "yellow", "green"];
+
+for(var i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
+
+
+
+
+*splice
+splice() 這方法可刪除或新增一個Array的內容。
+var myFish = ['angel', 'clown', 'drum', 'sturgeon'];
+var removed = myFish.splice(2, 1, 'trumpet');
+// myFish 為 ["angel", "clown", "trumpet", "sturgeon"]
+// removed 為 ["drum"]
+
+從索引 2 的位置開始，刪除 1 個元素並插入 "trumpet"
