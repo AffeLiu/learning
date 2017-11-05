@@ -138,6 +138,14 @@ while (count<6){
 	count++;
 }
 
+for loop 可用來快速叫出某個array裡的所有元素
+
+var colors = ["red", "orange", "yellow", "green"];
+
+for(var i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
 
 使用 indexof 函數查找某質中是某包含某些值
 
