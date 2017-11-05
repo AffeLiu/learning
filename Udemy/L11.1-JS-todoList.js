@@ -28,9 +28,10 @@ console.log("OK, you quit the app")
 
 function listTodos(){
 	console.log("**********")
-	todos.forEach(function(todo,index){
-	console.log(index + ": " + todo)});
+	todos.forEach(function(todo,index,array){
+	console.log(index + ": " + todo + ": " + array)});
 	console.log("**********");
+	//function(todo,index,array) (元素,元素位置,陣列目前的所有)
 }
 
 function newTodos(){
