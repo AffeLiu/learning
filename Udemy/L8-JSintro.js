@@ -236,8 +236,11 @@ var friend4 = "Mattias";
 
 var friends = ["Charlie", "Liz", "David", "Mattias"];
 
-取用：friends[0]"Charlie"
-增加：friends[4]"Mary" 即可將mary增加到friends裡去
+取用：friends[0]"Charlie"  friends[0][0]="C"
+// 增加：friends[4]"Mary" 即可將mary增加到friends裡去
+應該使用 push函數 
+
+friends.push("Mary","Bob") (這樣就可以不用再計算到底是第幾個)
 
 //We can initialize an empty array two ways:
 var friends = []; //no friends :(
@@ -251,3 +254,22 @@ var nums = [45,37,89,24];
 nums.length = 4
 
 
+
+push/pop
+
+pop() 方法是用來移除陣列的最後一個元素並回傳該元素。此方法改變了陣列的長度。
+push() 方法會添加一個或多個元素至陣列的末端，並且回傳陣列的新長度。
+
+shift/unshift
+shift() 方法 (method) 會從陣列移除第一個元素 (element)，並回傳該元素。此方法會改變陣列的長度。
+unshift() 方法 (method) 增加一個或多個元素 (element) 到陣列的開頭，並回傳新陣列的長度。
+
+indexOf
+indexOf() 方法會回傳"第一個"找到的元素索引，若沒找到則回傳 -1。
+
+slice
+slice()方法用來將A 陣列的元素 複製到 B 陣列
+
+slice(begin, end) end 不會被算進去 
+只填begin會直接複製到最後一個元素
+()都不填，就會複製全部
