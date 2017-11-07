@@ -67,3 +67,24 @@ function max(array){
 	}
 console.log(big)
 }
+
+
+
+*object
+不像array一樣有順序，他就只是個物件，存放於對應的特性中。
+
+var person = {
+	name: "cindy",
+	age: 32,
+	city: "Missoula"	
+};
+
+呼叫物件的方式有兩種 
+
+person.name    &    person(["name"])
+第一種方式雖然方便，但侷限在於物件名開頭不能是數字，整個字串不能有空格
+
+更改物件：
+只需要在後面輸入新的值即可
+person.name = "mary"
+
