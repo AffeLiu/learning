@@ -14,6 +14,7 @@ document.querySelector()
 Returns "the first" element that matches a given CSS-style selector
 var tag = document.querySelector(".bolded");
 var tag = document.querySelector("h1");
+也可選擇某元素裡的子元素：tag = document.querySelector(ul li)
 
 document.querySelectorAll()
 Returns a list of elements that matches a given CSS-style selector
@@ -94,3 +95,18 @@ link.setAttribute("href","www.dogs.com");
 var img = document.querySelector("img");
 img.setAttribute("src", "corgi.png");
 //<img src="corgi.png">
+
+
+*event
+<button>Click Me</button>
+<p>No One Has Clicked Me Yet</p>
+
+var button = document.querySelector("button");
+var paragraph = document.querySelector("p");
+
+//SETUP CLICK LISTENER
+button.addEventListener("click", function() {
+  paragraph.textContent = "Someone Clicked the Button!";
+});
+
+
