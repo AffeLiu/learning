@@ -283,7 +283,7 @@ slice(begin, end) end 不會被算進去
 ()都不填，就會複製全部
 
 
-*forEach
+*forEach (array才能用，object不行)
 
 for/while loop + function + array
 

@@ -30,7 +30,7 @@ var tag = document.getElementById("highlight");
 tag.style.color = "blue";
 tag.style.border = "10px solid red";
 
-
+CSS:
 /*DEFINE A CLASS IN CSS*/
 .some-class {
   color: blue;
@@ -52,3 +52,45 @@ tag.classList.remove("another-class");
 
 //TOGGLE A CLASS 切換 
 tag.classList.toggle("another-class");
+
+---------------------------------------------------
+*textContent
+Returns a string of all the text contained in a given element
+
+<p>
+  This is an <strong>awesome</strong> paragraph 
+</p>
+
+/Select the <p> tag:
+var tag = document.querySelector("p");
+
+//Retrieve the textContent:
+tag.textContent //"This is an awesome paragraph"
+
+//alter the textContent:
+tag.textContent = "blah blah blah";
+純文字 更改也只會顯示純文字 語法無效
+
+
+*innerHTML
+Similar to textContent, except it returns a string of all the HTML contained in a given element
+
+能顯示出有html的地方，當然修改時也能加入html的語法
+
+
+*Attributes
+Use getAttribute() and setAttribute() to read and write attributes like src or href
+
+<a href="www.google.com">I am a link</a>
+<img src="logo.png">
+
+var link = document.querySelector("a");
+link.getAttribute("href");  //"www.google.com"
+//CHANGE HREF ATTRIBUTE
+link.setAttribute("href","www.dogs.com"); 
+///<a href="www.dogs.com">I am a link</a>
+
+//TO CHANGE THE IMAGE SRC
+var img = document.querySelector("img");
+img.setAttribute("src", "corgi.png");
+//<img src="corgi.png">
