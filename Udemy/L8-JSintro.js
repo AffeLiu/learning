@@ -335,3 +335,9 @@ person.name    &    person(["name"])
 person.name = "mary"
 
 
+
+隨機數：
+Math.random() 會出現０到１之間的亂數
+
+Math.floor(Math.random() * n +1)
+去掉小數顯示你要的整數n
