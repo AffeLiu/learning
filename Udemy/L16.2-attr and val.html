@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attr and val</title>
+	<script type="text/javascript" src="L16.1-jQuery.js"></script>
+	<style type="text/css">
+		.correct{
+			color: red;
+			background: pink;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>jQuery methods</h1>
+
+<input type="text" placeholder="name" >
+
+<ul>
+<li>iii</li>
+<li>ooo</li>
+<li>iii</li>
+
+<img src="https://static.pexels.com/photos/683484/pexels-photo-683484.jpeg">
+<img src="https://static.pexels.com/photos/683484/pexels-photo-683484.jpeg">
+<img src="https://static.pexels.com/photos/683484/pexels-photo-683484.jpeg">
+
+</ul>
+</body>
+</html>
+
+
+
+$("li").text()
+改變內文
+
+$("li").html()
+改變整個html
+
+
+$("img").last().attr("src","https://static.pexels.com/photos/687811/pexels-photo-687811.jpeg")
+
+attr 將函數轉換成別的直
+.last 選取函數的最後一個
+
+$("input").val();
+傳回內文的值
+
+$("h1").addClass("correct")
+將這個class的css加入h1
+
