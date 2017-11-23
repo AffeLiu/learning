@@ -15,3 +15,25 @@
 
 </body>
 </html>
+
+
+
+
+寫法精簡：
+$("h1").css("color", "yellow")
+
+document.querySelector("h1").style.color = "yellow"
+
+
+
+*change all the style in one time
+
+var styles = {
+	color:"red",
+	background:"pink",
+	border:"2px solid purple"
+}
+
+$("h1").css(styles)
+
+直接在所有的h1套用所有的styles
